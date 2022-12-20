@@ -14,6 +14,12 @@ int main(){
 		else if((a==b&&a!=c)||(a!=b&&a==c)){
 			s1=1000+a*100;
 		}
+		else if((b==c&&b!=a)||(b==a&&b!=c)){
+			s1=1000+b*100;
+		}
+		else if((c==a&&c!=b)||(c==b&&c!=a)){
+			s1=1000+c*100;
+		}
 		else{
 			if(a>=b&&a>=c)max2=a;
 			else if(b>=a&&b>=c)max2=b;
